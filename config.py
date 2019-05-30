@@ -1,11 +1,18 @@
 """
-Contains settings and parameters for the code benchmarking.py
-"""
-import os
+This config file contains settings and parameters for the code benchmarking.py
+
+@author: Sinu Paul <spaul@lji.org>
+
+Created on March 15, 2019
+
+# Notes:
 # input file containing all data including the prediction scores from each method to be benchmarked.
 # if a new method is to be added to benchmarking, do epitope predictions for all peptides and add the predicted scores in the last column with header as 'method_name_score', 'method_name' to be replaced by the new method (use alphanumeric characters & underscore only).
 # in case the method cannot do prediction for specific peptides (e.g. because of unavailability of model for certain lengths), they should be assigne a bad score e.g.
 # if the prediction score for the methods ranges from 0 to 100, 0 being the best predicted epitope, the peptides that cannot be predicted for should be assigned a bad score e.g. 1000
+"""
+
+import os
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 input_file_name = ROOT_DIR+'/data/0.complete_data.zip'

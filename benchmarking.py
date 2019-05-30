@@ -1,5 +1,12 @@
 """
-Code to run benchmarking of CD8 T cell epitope prediction methods
+This is the code to run benchmarking of CD8 T cell epitope prediction methods.
+More details are in manuscript [currently under review]
+It takes input data in ./data that contains predicted scores, labels and other values and outputs the results in ./data
+This can also be used to benchmark new methods by plugging prediction results for the VACV peptides for H-2Db and H-2Kb alleles in the input data and running the script.
+
+@author: Sinu Paul <spaul@lji.org>
+
+Created on Feb 22, 2019
 """
 
 import pandas as pd
