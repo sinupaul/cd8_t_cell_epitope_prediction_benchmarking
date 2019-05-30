@@ -7,7 +7,7 @@ More details are in the manuscript (currently under preparation)
 - benchmarking.py takes the above data file and generates the result files and plots. The configurations for running the script are in config.py
 - The result files and plots are in the directory results/
 
-Requirements (the following python packages are required):
+# Requirements (the following python packages are required):
 - scikit-learn
 - matplotlib
 - numpy
